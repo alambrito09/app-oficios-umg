@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+
+/vendor/
+/uploads/*
+!/uploads/.gitkeep
+*.log
+
+# Internal project and academic materials; keep them out of the public app repository.
+/.opencode/
+/AGENTS.md
+/CHANGELOG.md
+/docs/
+/memory/
+/prototype/
+/security/
+/specs/
+/tests/
+/opencode.json
+/database/migrations/

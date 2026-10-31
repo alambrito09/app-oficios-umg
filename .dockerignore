@@ -1,0 +1,15 @@
+.env
+.env.*
+.git
+.gitignore
+.opencode
+memory
+docs
+prototype
+security
+specs
+tests
+CHANGELOG.md
+README.md
+AGENTS.md
+opencode.json

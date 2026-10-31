@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^assets/(.*)$ public/assets/$1 [L,NC]
+RewriteRule ^(application|system|database|docker|docs|memory|security|specs|tests|vendor)(/|$) - [F,L,NC]
+RewriteRule ^(\.env|\.git)(/|$) - [F,L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

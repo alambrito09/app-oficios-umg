@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Preserve the /oficios prefix used by the XAMPP installation instructions.
+RewriteRule ^oficios/?$ index.php/auth/login [L,QSA]
+RewriteRule ^oficios/(.*)$ index.php/$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
